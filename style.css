@@ -34,13 +34,11 @@ p {
 
 .text-content {
     margin: 6.25%;
+    margin-right: 20%;
 }
 
 
 .p-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
 }
 
 .side-menu{
