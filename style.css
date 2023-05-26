@@ -1,10 +1,35 @@
+
+@font-face {
+    font-family: AtkinsonHyperlegible;
+    src: url("fonts/Atkinson-Hyperlegible-Regular-102.ttf");
+}
+@font-face {
+    font-family: AtkinsonHyperlegible;
+    font-weight: bold;
+    src: url("fonts/Atkinson-Hyperlegible-Bold-102.ttf");
+}
+
 body {
-background-color: lightblue;
+    font-family: AtkinsonHyperlegible;
+    margin: 6.25%;
+    padding: 0;
 }
   
-h1 {
-color: navy;
-margin-left: 20px;
+h1, .h1 {
+    margin: 0;
+    margin-left:0;
+    font-size: 4rem;
 }
 
+.main-parent {
+    display: grid;
+    grid-template-columns: 18.75fr 81.25fr;
+}
 
+.text-content {
+    margin: 6.25%;
+}
+
+.side-menu{
+    text-align: right;
+}
