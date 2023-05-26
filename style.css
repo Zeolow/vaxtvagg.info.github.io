@@ -21,15 +21,38 @@ h1, .h1 {
     font-size: 4rem;
 }
 
+p {
+    text-align:justify;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+
 .main-parent {
     display: grid;
-    grid-template-columns: 18.75fr 81.25fr;
+    grid-template-columns: 15fr 85fr;
 }
 
 .text-content {
     margin: 6.25%;
 }
 
+
+.p-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
 .side-menu{
     text-align: right;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;    
 }
