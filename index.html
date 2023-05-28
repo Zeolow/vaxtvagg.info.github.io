@@ -5,9 +5,11 @@
 <script src="script.js"></script>
 </head>
 <body>
+    <div class="menu-toggle" id="menu-toggle" onclick="toggle_menu();">(⇨)</div>
     <div class="main-parent">
         <div class="side-menu" id="nav-bar">
             <div class="menu-list" id="menu-list">
+                <div style ="display:none; text-align:left" id="menu-toggle-inside" onclick="toggle_menu()">(⇦)</div>
                 <a href="index.html">⌂</a>
                 <a href="pages/about.html">About</a>
                 <a href="pages/climate-group.html">/UID Climate Group</a>
@@ -23,7 +25,7 @@
                 <a href="pages/credits.html">Credits</a>
                 <a href="pages/contact.html">Contact</a>
             </div>
-            <div class="menu-toggle" id="menu-toggle" onclick="toggle_menu();">(⇨)</div>
+            
         </div>
         <div class="text-content" id="main-text">
             <h1>Växtvägg</h1>
