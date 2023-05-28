@@ -3,7 +3,7 @@ function toggle_menu(){
   var mainText = document.getElementById("main-text")
   var menu = document.getElementById("menu-list")
 
-  if (menu.style.display === "none"){
+  if (menu.style.display === "none" || menu.style.display === ""){
     console.log(toggleButton.display)
     menu.style.display = "block"
     mainText.display = "none"
