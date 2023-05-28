@@ -2,12 +2,16 @@
 <html>
 <head>
 <link rel="stylesheet" href="../style.css">
+<script src="../script.js"></script>
 </head>
-<body>
+<body onresize="on_resize()">
+    <div class="menu-toggle" id="menu-toggle" onclick="toggle_menu();">(⇨)</div>
     <div class="main-parent">
-        <div class="side-menu">
-            <div>
+        <div class="side-menu" id="nav-bar">
+            <div class="menu-list" id="menu-list">
+                <div style ="display:none; text-align:left" id="menu-toggle-inside" onclick="toggle_menu()">(⇦)</div>
                 <a href="../index.html">⌂</a>
+                <a href="about.html">About</a>
                 <a href="climate-group.html">/UID Climate Group</a>
                 <a href="molbio.html">Molecular Biology</a>
                 <a href="watering-system.html">Watering Systems</a>
@@ -21,8 +25,9 @@
                 <a href="credits.html">Credits</a>
                 <a href="contact.html">Contact</a>
             </div>
+            
         </div>
-        <div class="text-content">
+        <div class="text-content" id="main-text">
             <h1>Watering System</h1>
             <p></p>
         </div>

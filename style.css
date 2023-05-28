@@ -46,7 +46,7 @@ a:hover {
 .menu-toggle{
     cursor: pointer;
     display: none;
-    position: sticky;
+    position: fixed;
     
 }
 
