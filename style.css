@@ -99,6 +99,11 @@ a:hover {
         font-size: 2rem;
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
+        overflow-x:hidden;
+        margin-right: -5%;
+        margin-left: -5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     a {
         margin-bottom: 0.5rem;
