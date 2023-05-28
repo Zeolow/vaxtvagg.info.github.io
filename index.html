@@ -2,11 +2,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
     <div class="main-parent">
-        <div class="side-menu">
-            <div>
+        <div class="side-menu" id="nav-bar">
+            <div class="menu-list" id="menu-list">
                 <a href="index.html">⌂</a>
                 <a href="pages/about.html">About</a>
                 <a href="pages/climate-group.html">/UID Climate Group</a>
@@ -22,8 +23,9 @@
                 <a href="pages/credits.html">Credits</a>
                 <a href="pages/contact.html">Contact</a>
             </div>
+            <div class="menu-toggle" id="menu-toggle" onclick="toggle_menu();">(⇨)</div>
         </div>
-        <div class="text-content">
+        <div class="text-content" id="main-text">
             <h1>Växtvägg</h1>
             <div class="p-content">
             <p>(what)
