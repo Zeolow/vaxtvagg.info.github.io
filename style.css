@@ -153,5 +153,8 @@ a:hover {
     .text-content{
         margin:0;
     }
+    .two-img-grid{
+        display: block;
+    }
 }
 
