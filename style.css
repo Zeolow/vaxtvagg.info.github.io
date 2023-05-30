@@ -9,6 +9,10 @@
     src: url("fonts/Atkinson-Hyperlegible-Bold-102.ttf");
 }
 
+img {
+    width:100%
+}
+
 body {
     font-family: AtkinsonHyperlegible;
     margin: 6.25%;
@@ -24,7 +28,6 @@ h1, .h1 {
 p {
     text-align:justify;
     margin: 0;
-    padding-bottom: 3rem;
 }
 
 a {
@@ -61,6 +64,17 @@ a:hover {
     display: block;
     position:sticky;
     top:10%;
+}
+
+.two-img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.3rem;
+}
+.three-img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.3rem;
 }
 
 @media only screen and (max-width: 1000px){
