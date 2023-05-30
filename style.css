@@ -16,6 +16,7 @@ img {
 body {
     font-family: AtkinsonHyperlegible;
     margin: 6.25%;
+    margin-top: 0;
     padding: 0;
 }
   
@@ -48,6 +49,8 @@ a:hover {
 .menu-toggle{
     cursor: pointer;
     display: none;
+    position: fixed;
+    
 }
 
 .main-parent {
@@ -86,12 +89,16 @@ a:hover {
         text-align: left;
     }
     .menu-toggle{
-        position:sticky;
-        top:5%;
+        position:fixed;
+        top:0;
         display: block;
-        min-width: 50px;
-        min-height: 50px;
-        font-size: 1.5rem;
+        text-align: left;
+        font-size: 2rem;
+        
+        margin-left: -1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-right: -1%;
     }
     
     .menu-list {
@@ -101,26 +108,31 @@ a:hover {
         background-color: rgba(255,255,255,0.5);
         width:95vw;
         height: 100vh;
-        font-size: 1.5rem;
+        font-size: 2rem;
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
-        padding-top:3rem
+        overflow-x:hidden;
+        margin-right: -5%;
+        margin-left: -5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     a {
         margin-bottom: 0.5rem;
     }
     body {
-        margin: 2%
+        margin: 1%;
+        margin-top: 0;
     }
     .main-parent{
-        grid-template-columns: 1fr 8fr 1fr;
+        display: block
     }
     .text-content {
         margin-right: 6.25%
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
     h1{
         font-size: 6rem;
     }
@@ -128,7 +140,18 @@ a:hover {
         font-size: 3rem;
     }
     .menu-list {
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+    .menu-toggle{
+        position: sticky;
+        font-size: 4rem;
+        width: 100%;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background-color: rgba(255,255,255,0.5);
+    }
+    .text-content{
+        margin:0;
     }
 }
 
